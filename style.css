@@ -1,0 +1,59 @@
+/* element styling */
+body {
+    background-image: url(/images/cool-background.jpg);
+    margin: 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    padding-top: 20px;
+}
+
+img {
+    width: 100%;
+    border-radius: 5%;
+}
+
+section {
+    margin: 5px;
+    padding: 10px;
+    background-color: rgba(238, 200, 95, 0.671);
+    border-radius: 5%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+/* text styling */
+h1, h2, h3 {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+}
+
+p, li {
+    font-family: 'Josefin Sans', sans-serif;
+    padding-bottom: 10px;
+}
+
+li {
+    font-size: 22px;
+}
+
+/* classes */
+.group {
+    display: flex;
+}
+
+.item {
+    flex: 1;
+    margin: 10px;
+}
+
+.item-double {
+    flex: 2;
+}
