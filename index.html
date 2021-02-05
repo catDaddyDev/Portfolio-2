@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -35,18 +35,22 @@
             </div>
             <div class="item">
                 <h2>Who is Elliot?</h2>
-                <p>I am a junior developer residing in Austin, Texas. Along with that, I am a fiance, brother, father and more. My career interests lie in: </p>
+                <p>I am a junior developer residing in Austin, Texas. Along with that, I am a fiance, brother, father, and more. My career interests lie in: </p>
                 <ul>
                     <li>Developing code for console games, applications for kids education in a game-like environment and mobile games</li>
                     <li>Working on open-source code programs that help with increasing the quality of life for the masses in under-developed areas, in whatever capacity</li>
-                    <li>Exploring the tech industry and working with like-minded developers who have similar values and care for the greater good.</li>
+                    <li>Exploring the tech industry and working with like-minded developers who have similar values and care for the greater good</li>
+                    <li>Working on fun random projects that will require me to keep current on my skills and learning more coding languages</li>
                 </ul>
+                <p>Ultimately, I am open to a challenge where I will be uncomfortable and grow to, if not meet them, then exceed expectations.</p>
+
+                <p class="quote">Learn continually - there's always "one more thing" to learn!<br/>- Steve Jobs -</p>
             </div>
         </section>
         <!-- about me -->
         <section>
             <h2>Elliot On A Personal Level</h2>
-            <p>My hobbies and interests include gaming, weight lifting, tattooing, skateboarding, spending time with my family and, of course, coding! I took interest in coding during high school and went to college briefly for computer science where I learned the basics of Python and C++. I found that the college route was not for me and decided to give it a go at Thinkful to streamline my education.</p>
+            <p>My hobbies and interests include gaming, weight lifting, tattooing, skateboarding, spending time with my family and coding! I took interest in coding during high school and went to college briefly for computer science where I learned the basics of Python and C++. I found that the college route was not for me and decided to give it a go at Thinkful to streamline my education.</p>
 
             <p>Some things worth knowing about me is that I am a bi-racial, transgender male. With that being said, I strongly value inclusion and diversity. I'd love to be a part of a team where members come from different backgrounds and can work together on a solution that benefits everyone in our targeted audience.
             </p>
@@ -61,18 +65,21 @@
 
 			<div class="group">
 				<div class="item item-double">
-				    <form action="#" method="POST">
-                        <label for="user-name">Name:</label>
-                        <input id="user-name" type="text" name="name">
-                        <br />
-                        <label for="user-email">Email:</label>
-                        <input id="user-email" type="text" name="email">
-                        <br />
-                        <label for="user-message">Message:</label>
-                        <textarea id="user-message" name="message"></textarea>
-                        <br />
-                        <button type="submit">Submit</button>
-                    </form>
+                    <fieldset class="quote">
+                        <legend class="space-around">Let's Chat!</legend>
+                        <form action="https://formspree.io/f/mqkgjyqe" method="POST">
+                            <label for="user-name">Name:</label>
+                            <input id="user-name" type="text" name="name" required placeholder="Preferred name is totally okay">
+                            <br />
+                            <label for="user-email">Email:</label>
+                            <input id="user-email" type="email" name="email" required placeholder="Make sure I can get back to you!">
+                            <br />
+                            <label for="user-message">Message:</label>
+                            <textarea id="user-message" name="message" required placeholder="What would you like to say?"></textarea>
+                            <br />
+                            <button type="submit">Send</button>
+                        </form>
+                    </fieldset>
 				</div>
 				<div class="item">
 					<p>Phone #: <a href="tel:512-621-8902">512-621-8902</a></p>
@@ -87,27 +94,42 @@
         <section id="projects">
 			<h2>Projects</h2>
 			<div class="group">
+                <div class="item">
+                    <img src="images/library-screenshot.png" alt="Screenshot of portfolio - Elliot Golden">
+                    <h3>Library Project</h3>
+                    <p>This app features a neighborhood local library where people can lend and borrow books. Developed a feature to show which books are available, which are currently out, and other general statistics about the library.</p>
+                    <ul>
+                        <li>Displays creation of arrays based on conditional statements, objects and accessing their key/value pairs and use of several different array methods in JavaScript</li>
+                        <li>Tested my ability to work with large datasets and build algorithms using those datasets.</li>
+                        <li>Learned to differentiate between the most common JavaScript error types and solve bugs by using error messages</li>
+                    </ul>
+                    <p><a href="https://github.com/catDaddyDev/project-local-library">GitHub Repo</a></p>
+                    <p><a href="https://catdaddydev.github.io/project-local-library/">Live App</a></p>
+                </div>
 				<div class="item">
                     <img src="images/portfolio-screenshot.jpg" alt="Screenshot of portfolio - Elliot Golden">
                     <h3>First Web Portfolio</h3>
-					<p>This is my first online portfolio I built using my stater knowledge of HTML and CSS.</p>
+					<p>This is my first online portfolio built as a starting point to showcase my skills in HTML and CSS and also acts as an online resume/business card.</p>
+                    <ul>
+                        <li>Learned to create HTML elements and CSS styles without use of templates</li>
+                        <li>Learned how to manipulate styling to create an interesting web design for displaying content</li>
+                        <li>Utilized class and id attributes, different types of HTML elements-- lists, headings, text and images</li>
+                    </ul>
                     <p><a href="https://github.com/catDaddyDev/portfolio">GitHub Repo</a></p>
                     <p><a href="https://catdaddydev.github.io/portfolio/">Live App</a></p>
 				</div>
 				<div class="item">
                     <img src="images/decoder-ring-screenshot.jpg" alt="Screenshot of Decoder Project - Elliot Golden">
                     <h3>Decoder Ring Project</h3>
-					<p>My first project using JavaScript. Decoder Ring features 3 cipher algorithms: Caesar, Polybius and Substitution.</p>
+					<p>Decoder features 3 ciphers: Caesar, Polybius and Substitution. Ciphers are used to encode/decode text, such as passwords, secret messages or even military commands!</p>
+                    <ul>
+                        <li>Utilized loops, conditional statements, array methods and arrow functions in JavaScript</li>
+                        <li>Used Mocha and Chai to create tests for functions</li>
+                        <li>Learned to implement and code several different algorithms using clearly defined steps</li>
+                    </ul>
                     <p><a href="https://github.com/catDaddyDev/Project_Decoder_Ring_1">GitHub Repo</a></p>
                     <p><a href="https://catdaddydev.github.io/Project_Decoder_Ring_1/">Live App</a></p>
 				</div>
-                <div class="item">
-                    <img src="images/library-screenshot.png" alt="Screenshot of portfolio - Elliot Golden">
-                    <h3>Library Project</h3>
-                    <p>A project designed to test my ability to work with large datasets and build algorithms based on those datasets using JavaScript.</p>
-                    <p><a href="https://github.com/catDaddyDev/project-local-library">GitHub Repo</a></p>
-                    <p><a href="https://catdaddydev.github.io/project-local-library/">Live App</a></p>
-                </div>
             </div>
         </section>
     </main>

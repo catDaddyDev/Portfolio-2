@@ -16,14 +16,14 @@ nav {
 
 img {
     width: 100%;
-    border-radius: 5%;
+    border-radius: 10px;
 }
 
 section {
     margin: 15px;
     padding: 10px;
     background-color: rgba(238, 200, 95, 0.671);
-    border-radius: 5%;
+    border-radius: 10px;
 }
 
 section p {
@@ -32,6 +32,10 @@ section p {
 
 nav ul {
     list-style-type: none;
+}
+
+section ul li{
+    font-size: small;
 }
 
 footer {
@@ -91,6 +95,16 @@ label {
 
 .item-double {
     flex: 2;
+}
+
+.quote {
+    border-radius: 10px;
+    border: black double 2px;
+    padding-top: 10px;
+}
+
+.space-around {
+    padding: 10px;
 }
 
 
