@@ -10,7 +10,8 @@ header nav {
 }
 
 nav {
-    padding-top: 20px;
+    margin-top: auto;
+    align-self: center;
 }
 
 img {
@@ -19,14 +20,34 @@ img {
 }
 
 section {
-    margin: 5px;
+    margin: 15px;
     padding: 10px;
     background-color: rgba(238, 200, 95, 0.671);
     border-radius: 5%;
+    text-align: center;
 }
 
 nav ul {
     list-style-type: none;
+}
+
+footer {
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a:link { color: black; }
+a:visited { color: rgb(248, 161, 0);}
+a:hover { color: rgb(212, 152, 41);}
+a:active { color: green}
+
+/* form styling */
+form {
+    padding-right: 8px;
 }
 
 /* text styling */
@@ -38,15 +59,22 @@ h1, h2, h3 {
 p, li {
     font-family: 'Josefin Sans', sans-serif;
     padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 li {
     font-size: 22px;
 }
 
+label {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 /* classes */
 .group {
     display: flex;
+    flex-direction: column;
 }
 
 .item {
@@ -56,4 +84,17 @@ li {
 
 .item-double {
     flex: 2;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* larger screen size */
+@media all and (min-width: 800px) {
+    .group {
+        display: flex;
+        flex-direction: row;
+    }
 }
